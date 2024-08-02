@@ -8,7 +8,6 @@ const getPath = (path: string): string => resolve(__dirname, `src/${path}`);
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: "/frontend/",
   resolve: {
     alias: {
       "@assets": getPath("assets"),
