@@ -8,9 +8,7 @@ const getPath = (path: string): string => resolve(__dirname, `src/${path}`);
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  build: {
-    outDir: "./build"
-  },
+  base: "/frontend/",
   resolve: {
     alias: {
       "@assets": getPath("assets"),
